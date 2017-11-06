@@ -1,4 +1,4 @@
-package com.studentapp.junit;
+package com.studentapp.junit.studentsinfo;
 
 import io.restassured.RestAssured;
 import net.serenitybdd.junit.runners.SerenityRunner;
