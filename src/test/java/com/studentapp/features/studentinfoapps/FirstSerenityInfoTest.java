@@ -20,7 +20,7 @@ import java.io.FileReader;
  */
 
 @RunWith(SerenityRunner.class)
-class FirstSerenityInfoTest {
+public class FirstSerenityInfoTest {
 
     @BeforeClass
     public static void init() {
