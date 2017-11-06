@@ -5,6 +5,7 @@ import net.serenitybdd.junit.runners.SerenityRunner;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Manual;
 import net.thucydides.core.annotations.Pending;
+import net.thucydides.core.annotations.Title;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -17,14 +18,16 @@ import java.io.FileReader;
 /**
  * Created by magn on 11/3/2017.
  */
+
 @RunWith(SerenityRunner.class)
-public class FirstSerenityInfoTest {
+class FirstSerenityInfoTest {
 
     @BeforeClass
     public static void init() {
         RestAssured.baseURI="http://localhost:8080/student";
     }
 
+    @Title("Test returns student info")
     @Test
     public void getAllStudents() {
         SerenityRest.given()
