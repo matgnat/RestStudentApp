@@ -1,4 +1,4 @@
-package com.studentapp.junit;
+package com.studentapp.features.studentinfoapps;
 
 import io.restassured.RestAssured;
 import net.serenitybdd.junit.runners.SerenityRunner;
@@ -18,7 +18,7 @@ import java.io.FileReader;
  * Created by magn on 11/3/2017.
  */
 @RunWith(SerenityRunner.class)
-public class FirstSerenityTest {
+public class FirstSerenityInfoTest {
 
     @BeforeClass
     public static void init() {
