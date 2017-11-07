@@ -1,5 +1,6 @@
 package com.studentapp.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
