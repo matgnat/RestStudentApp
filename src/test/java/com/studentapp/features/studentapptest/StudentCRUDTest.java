@@ -1,11 +1,10 @@
 package com.studentapp.features.studentapptest;
 
-import com.studentapp.model.StudentClass;
+import com.studentapp.cucumber.serenity.CreateStudentSteps;
 import com.studentapp.testbase.TestBase;
 import com.studentapp.testbase.TestUtils;
-import io.restassured.http.ContentType;
 import net.serenitybdd.junit.runners.SerenityRunner;
-import net.serenitybdd.rest.SerenityRest;
+import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.annotations.Title;
 import org.hamcrest.collection.IsMapContaining;
 import org.junit.Assert;
@@ -33,7 +32,8 @@ public class StudentCRUDTest extends TestBase{
     static int studenId;
 
 
-
+    @Steps
+    CreateStudentSteps steps;
 
     @Title("This test will create the student")
     @Test
@@ -43,27 +43,8 @@ public class StudentCRUDTest extends TestBase{
         courses.add("JAVA");
         courses.add("Python");
 
-        StudentClass student = new StudentClass();
-        student.setFirstName(firstName);
-        student.setLastName(lastName);
-        student.setEmail(email);
-        student.setProgramme(programme);
-        student.setCourses(courses);
-
-
-        SerenityRest.rest()
-                .given()
-                .contentType(ContentType.JSON)
-                .log()
-                .all()
-                .when()
-                .body(student)
-                .post()
-                .then()
-                .log()
-                .all()
+        steps.createStudent(firstName, lastName, email, programme, courses)
                 .statusCode(201);
-
     }
 
     @Title("verify if student added to app")
@@ -73,23 +54,12 @@ public class StudentCRUDTest extends TestBase{
         String p1 = "findAll{it.firstName=='";
         String p2 = "'}.get(0)";
 
-        HashMap<String, Object> value = SerenityRest.rest().given()
-                .when()
-                .get("/list")
-                .then()
-                .log()
-                .all()
-                .statusCode(200)
-                .extract()
-                .path(p1 + firstName + p2);
-
-        System.out.println(" ------------------> " + value);
-
-        studenId = (int) value.get("id");
+        HashMap<String, Object> value = steps.getStudentInfo(firstName);
 
         Assert.assertThat(value, IsMapContaining.hasValue(firstName));
         Assert.assertThat(value, IsMapContaining.hasEntry("firstName", firstName));
 
+        studenId = (int) value.get("id");
     }
 
 
@@ -103,44 +73,20 @@ public class StudentCRUDTest extends TestBase{
 
         firstName = firstName + "_update";
 
-        StudentClass student = new StudentClass();
-        student.setFirstName(firstName);
-        student.setLastName(lastName);
-        student.setEmail(email);
-        student.setProgramme(programme);
-        student.setCourses(courses);
-
-
-        SerenityRest.rest()
-                .given()
-                .contentType(ContentType.JSON)
-                .log()
-                .all()
-                .when()
-                .body(student)
-                .put("/" + studenId)
-                .then()
-                .log()
-                .all()
+        steps.updateStudent(studenId, firstName, lastName, email, programme, courses)
                 .statusCode(200);
+
+        HashMap<String, Object> value = steps.getStudentInfo(firstName);
+        Assert.assertThat(value, IsMapContaining.hasValue(firstName));
     }
 
     @Title("Delete student and verify if student is deleted")
     @Test
     public void D_deleteStudent() {
 
-        SerenityRest.rest()
-                .given()
-                .when()
-                .delete("/" + studenId);
+        steps.deleteStudent(studenId);
 
-        SerenityRest.rest()
-                .given()
-                .when()
-                .get("/" + studenId)
-                .then()
-                .log()
-                .all()
+        steps.getStudentWithID(studenId)
                 .statusCode(404);
 
     }
