@@ -51,21 +51,21 @@ public class FirstSerenityTest {
      * pending test - not complete yet
      * decorator provide by serenity
      */
-    @Pending
+    /*@Pending
     @Test
     public void thisIsPendingTest() {
 
-    }
+    }*/
 
     /**
      * ignore test
      * decorator provide by junit
      */
-    @Ignore
+    /*@Ignore
     @Test
     public void thisIsSkippTest() {
 
-    }
+    }*/
 
 
     @Test

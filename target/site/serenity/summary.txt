@@ -1,11 +1,11 @@
-Serenity report generated 03-11-2017 15:50
-7 test scenarios 
+Serenity report generated 08-11-2017 12:47
+16 test scenarios 
 
-Passed:             1
-Pending             2
-Failed:             1
-Failed with errors: 1
-Compromised:        1
-Pending:            2
+Passed:             6
+Pending             3
+Failed:             2
+Failed with errors: 2
+Compromised:        2
+Pending:            3
 Ignored:            1
 Skipped:            0

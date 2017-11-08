@@ -172,7 +172,7 @@
                 </dependencies>
                 <executions>
                     <execution>
-                        <id>serenity-reports</id>
+                        <id>thucydides-reports</id>
                         <phase>post-integration-test</phase>
                         <goals>
                             <goal>aggregate</goal>

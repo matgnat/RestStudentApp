@@ -1,1 +1,5 @@
-com\studentapp\junit\FirstSerenityTest.class
+com\studentapp\testbase\TestBase.class
+com\studentapp\features\studentapptest\FirstSerenityTest.class
+com\studentapp\features\studentapptest\StudentCRUDTest.class
+com\studentapp\testbase\TestUtils.class
+com\studentapp\features\studentinfoappstest\FirstSerenityInfoTest.class

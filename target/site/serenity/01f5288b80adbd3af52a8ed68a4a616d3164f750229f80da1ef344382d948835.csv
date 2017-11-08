@@ -1,2 +1,7 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"First serenity test","Get all students","SUCCESS","2017-11-03T15:50:34.413+01:00","0.0","0.1"
+"Student CRUD test","Delete student and verify if student is deleted","SUCCESS","2017-11-08T12:47:08.224+01:00","0.0","0.25"
+"First serenity test","Get all students","SUCCESS","2017-11-08T12:47:02.524+01:00","0.0","0.76"
+"First serenity info test","Test returns student info","SUCCESS","2017-11-08T12:47:11.019+01:00","0.0","0.2"
+"Student CRUD test","This test will create the student","SUCCESS","2017-11-08T12:47:06.335+01:00","0.0","0.8"
+"Student CRUD test","Update first name","SUCCESS","2017-11-08T12:47:08.002+01:00","0.0","0.22"
+"Student CRUD test","verify if student added to app","SUCCESS","2017-11-08T12:47:07.134+01:00","0.0","0.87"
