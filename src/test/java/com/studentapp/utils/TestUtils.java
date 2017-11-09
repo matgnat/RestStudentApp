@@ -1,4 +1,4 @@
-package com.studentapp.testbase;
+package com.studentapp.utils;
 
 import java.util.Random;
 

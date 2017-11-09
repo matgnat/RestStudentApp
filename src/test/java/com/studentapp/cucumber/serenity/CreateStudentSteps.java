@@ -1,6 +1,7 @@
 package com.studentapp.cucumber.serenity;
 
 import com.studentapp.model.StudentClass;
+import com.studentapp.utils.ReusableSpecyfication;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
@@ -28,7 +29,7 @@ public class CreateStudentSteps
 
         return SerenityRest.rest()
                 .given()
-                .contentType(ContentType.JSON)
+                .spec(ReusableSpecyfication.getGenericRequestSpec())
                 .when()
                 .body(studentClass)
                 .post()
@@ -47,6 +48,7 @@ public class CreateStudentSteps
                 .then()
                 .log()
                 .all()
+                .spec(ReusableSpecyfication.getGenericResponsSpec())
                 .statusCode(200)
                 .extract()
                 .path(p1 + firstName + p2);
@@ -66,7 +68,7 @@ public class CreateStudentSteps
 
         return SerenityRest.rest()
                 .given()
-                .contentType(ContentType.JSON)
+                .spec(ReusableSpecyfication.getGenericRequestSpec())
                 .log()
                 .all()
                 .when()
@@ -86,6 +88,7 @@ public class CreateStudentSteps
         return SerenityRest.rest()
                 .given()
                 .when()
+                .spec(ReusableSpecyfication.getGenericRequestSpec())
                 .delete("/" + studenId);
     }
 
@@ -100,7 +103,8 @@ public class CreateStudentSteps
                 .get("/" + studentId)
                 .then()
                 .log()
-                .all();
+                .all()
+                .spec(ReusableSpecyfication.getGenericResponsSpec());
     }
 
 }

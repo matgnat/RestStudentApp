@@ -2,8 +2,7 @@ package com.studentapp.features.studentapp;
 
 import com.studentapp.cucumber.serenity.CreateStudentSteps;
 import com.studentapp.testbase.TestBase;
-import com.studentapp.testbase.TestUtils;
-import io.restassured.http.ContentType;
+import com.studentapp.utils.TestUtils;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.annotations.Title;
