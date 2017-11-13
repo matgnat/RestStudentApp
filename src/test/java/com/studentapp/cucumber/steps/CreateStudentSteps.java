@@ -1,8 +1,7 @@
-package com.studentapp.cucumber.serenity;
+package com.studentapp.cucumber.steps;
 
 import com.studentapp.model.StudentClass;
 import com.studentapp.utils.ReusableSpecyfication;
-import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import net.serenitybdd.rest.SerenityRest;
@@ -18,14 +17,14 @@ public class CreateStudentSteps
 {
 
     @Step("Create student with firstName: {0}, lastName: {1}, email: {2}, programme: {3}, courses: {4}")
-    public ValidatableResponse createStudent(String firstName, String lastName, String email, String programme, ArrayList<String> courses) {
+    public ValidatableResponse createStudent(String firstName, String lastName, String email, String programme, ArrayList<String> course) {
 
         StudentClass studentClass = new StudentClass();
         studentClass.setFirstName(firstName);
         studentClass.setLastName(lastName);
         studentClass.setEmail(email);
         studentClass.setProgramme(programme);
-        studentClass.setCourses(courses);
+        studentClass.setCourse(course);
 
         return SerenityRest.rest()
                 .given()
@@ -63,7 +62,7 @@ public class CreateStudentSteps
         student.setLastName(lastName);
         student.setEmail(email);
         student.setProgramme(programme);
-        student.setCourses(courses);
+        student.setCourse(courses);
 
 
         return SerenityRest.rest()
