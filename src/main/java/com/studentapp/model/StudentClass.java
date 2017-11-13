@@ -13,7 +13,7 @@ public class StudentClass {
     private String lastName;
     private String email;
     private String programme;
-    private List<String> courses;
+    private ArrayList<String> course;
 
     public int getId() {
         return id;
@@ -55,12 +55,12 @@ public class StudentClass {
         this.programme = programme;
     }
 
-    public List<String> getCourses() {
-        return courses;
+    public ArrayList<String> getCourse() {
+        return course;
     }
 
-    public void setCourses(List<String> courses) {
-        this.courses = courses;
+    public void setCourse(ArrayList<String> course) {
+        this.course = course;
     }
 
 

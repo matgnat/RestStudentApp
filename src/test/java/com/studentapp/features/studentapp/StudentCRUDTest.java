@@ -1,6 +1,6 @@
 package com.studentapp.features.studentapp;
 
-import com.studentapp.cucumber.serenity.CreateStudentSteps;
+import com.studentapp.cucumber.steps.CreateStudentSteps;
 import com.studentapp.testbase.TestBase;
 import com.studentapp.utils.TestUtils;
 import net.serenitybdd.junit.runners.SerenityRunner;
