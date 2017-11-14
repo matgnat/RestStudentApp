@@ -5,6 +5,7 @@ import com.studentapp.testbase.TestBase;
 import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.annotations.Title;
+import net.thucydides.junit.annotations.Concurrent;
 import net.thucydides.junit.annotations.Qualifier;
 import net.thucydides.junit.annotations.UseTestDataFrom;
 import org.junit.Test;
@@ -16,6 +17,7 @@ import java.util.List;
 /**
  * Created by magn on 11/9/2017.
  */
+@Concurrent(threads = "4x")
 @UseTestDataFrom("C:\\Users\\magn.MOBICAPL\\IdeaProjects\\StudentApp\\src\\test\\resorces\\studentData.csv")
 @RunWith(SerenityParameterizedRunner.class)
 public class CreateStudentDataDriven extends TestBase{
@@ -25,7 +27,7 @@ public class CreateStudentDataDriven extends TestBase{
     public String email;
     public String programme;
     public String course;
-
+    public ArrayList<String> courses;
     /*    @Qualifier
     public String qualifier() {
         return firstName + "=>" + lastName + "=>" + email + "=>" + programme;

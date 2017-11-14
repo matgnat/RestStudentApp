@@ -1,5 +1,6 @@
 package com.studentapp.features.studentapp;
 
+import com.studentapp.testbase.TestBase;
 import io.restassured.RestAssured;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.serenitybdd.rest.SerenityRest;
@@ -18,12 +19,12 @@ import java.io.FileReader;
  * Created by magn on 11/3/2017.
  */
 @RunWith(SerenityRunner.class)
-public class FirstSerenityTest {
+public class FirstSerenityTest extends TestBase{
 
-    @BeforeClass
-    public static void init() {
-        RestAssured.baseURI="http://localhost:8080/student";
-    }
+//    @BeforeClass
+//    public static void init() {
+//        RestAssured.baseURI="http://localhost:8080/student";
+//    }
 
     @Test
     public void getAllStudents() {

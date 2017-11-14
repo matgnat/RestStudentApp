@@ -1,3 +1,101 @@
 FIRSTNAME,LASTNAME,EMAIL,PROGRAMME,COURSE
-Mark,Tylor,mt19@gmail.com,testing,JavaScript
-Leo,Johnson,lj19@gmail.com,testing,Python
+Amalle,Blazynski,ablazynski0@delicious.com,Computer Science,C
+Simon,Draper,sdraper1@usgs.gov,Math,C
+Petronia,Northway,pnorthway2@prlog.org,Computer Science,C
+Cherry,Championnet,cchampionnet3@google.ru,Computer Science,C++
+Damiano,Ivashchenko,divashchenko4@reference.com,Math,C
+Bonnee,Luten,bluten5@printfriendly.com,Biology,C++
+Jonathon,Tims,jtims6@stanford.edu,Biology,JAVA
+Viole,Kitchingman,vkitchingman7@github.io,Information Science,JAVA
+Zondra,Cicculi,zcicculi8@nasa.gov,Biology,PYTHON
+Almeda,Dwelly,adwelly9@google.com,Biology,C++
+Eada,Spratt,espratta@storify.com,Math,PYTHON
+Mariska,Beales,mbealesb@vistaprint.com,Biology,C
+Marten,Bohlens,mbohlensc@virginia.edu,Math,PYTHON
+Tersina,Enocksson,tenockssond@imageshack.us,Biology,JAVA
+Desmund,McDavid,dmcdavide@uol.com.br,Information Science,Android
+Bettina,Agostini,bagostinif@webmd.com,Information Science,JAVA
+Olly,Torri,otorrig@123-reg.co.uk,Biology,C++
+Felita,Kendred,fkendredh@tamu.edu,Information Science,Android
+Tootsie,Moncrefe,tmoncrefei@narod.ru,Biology,PYTHON
+Frasco,Paviour,fpaviourj@wufoo.com,Biology,C
+Cissy,Graveston,cgravestonk@hp.com,Math,PYTHON
+Shirlene,Cowoppe,scowoppel@squidoo.com,Computer Science,C++
+Constantia,Mont,cmontm@cdc.gov,Information Science,JAVA
+Debora,Caplen,dcaplenn@arstechnica.com,Computer Science,PYTHON
+Annie,Franzettoini,afranzettoinio@time.com,Computer Science,JAVA
+Valery,Deeble,vdeeblep@tripod.com,Information Science,PYTHON
+Jeane,Burling,jburlingq@hp.com,Computer Science,C++
+Agace,Thunderman,athundermanr@bloglines.com,Computer Science,JAVA
+Cornelius,Neilson,cneilsons@mapquest.com,Information Science,JAVA
+Llywellyn,Ponton,lpontont@cbslocal.com,Math,Android
+Mercy,Blouet,mblouetu@lycos.com,Information Science,C++
+Cassy,Blight,cblightv@mac.com,Information Science,JAVA
+Kristy,Fray,kfrayw@google.com.br,Biology,C
+Lottie,Honig,lhonigx@newyorker.com,Math,PYTHON
+Haskel,Edmondson,hedmondsony@technorati.com,Math,C++
+Lindy,Boothroyd,lboothroydz@joomla.org,Information Science,C++
+Lamond,Monks,lmonks10@reference.com,Information Science,PYTHON
+Kelly,Rubinsohn,krubinsohn11@upenn.edu,Information Science,JAVA
+Humberto,Bloan,hbloan12@pbs.org,Math,JAVA
+Lula,Cahn,lcahn13@acquirethisname.com,Biology,Android
+Marius,Leemans,mleemans14@twitpic.com,Math,Android
+Jorgan,Kabos,jkabos15@chron.com,Math,PYTHON
+Bronson,Fasler,bfasler16@flickr.com,Computer Science,Android
+Lorine,Worboy,lworboy17@dedecms.com,Math,C
+Judith,Balmann,jbalmann18@ucla.edu,Computer Science,C++
+Allyce,Cubbini,acubbini19@state.gov,Information Science,C++
+Reynold,Poad,rpoad1a@webs.com,Biology,C++
+Robbi,Simes,rsimes1b@usda.gov,Biology,PYTHON
+Ted,Zecchi,tzecchi1c@amazon.co.uk,Computer Science,C
+Gwyn,McDunlevy,gmcdunlevy1d@oakley.com,Information Science,PYTHON
+Gibby,Renouf,grenouf1e@wix.com,Biology,C
+Dasya,Swynfen,dswynfen1f@nps.gov,Math,JAVA
+Carlie,Atyea,catyea1g@wix.com,Math,C++
+Gilbertina,Semonin,gsemonin1h@github.com,Computer Science,C
+Jethro,Haggart,jhaggart1i@blogs.com,Information Science,PYTHON
+Austin,Revington,arevington1j@twitpic.com,Computer Science,Android
+Issie,MacBean,imacbean1k@purevolume.com,Math,JAVA
+Fiorenze,Stovold,fstovold1l@omniture.com,Information Science,Android
+Barty,Paumier,bpaumier1m@psu.edu,Math,C
+Omero,Drust,odrust1n@nymag.com,Math,PYTHON
+Corabella,Colly,ccolly1o@t-online.de,Biology,C++
+Natividad,Degenhardt,ndegenhardt1p@virginia.edu,Biology,C++
+Mandie,Haywood,mhaywood1q@hibu.com,Computer Science,PYTHON
+Cary,D'Abbot-Doyle,cdabbotdoyle1r@unblog.fr,Biology,PYTHON
+Gabriel,Dymott,gdymott1s@cornell.edu,Biology,PYTHON
+Gian,Gallety,ggallety1t@globo.com,Biology,C++
+Marcela,Roistone,mroistone1u@unc.edu,Information Science,Android
+Blaine,Grigoli,bgrigoli1v@nifty.com,Computer Science,C
+Tybi,Egdal,tegdal1w@nih.gov,Biology,JAVA
+El,Cleland,ecleland1x@cyberchimps.com,Computer Science,C++
+Brear,Land,bland1y@hibu.com,Information Science,Android
+Mirabelle,Hallum,mhallum1z@github.io,Biology,PYTHON
+Franni,Behagg,fbehagg20@mediafire.com,Math,C
+Jaquenetta,Ritmeyer,jritmeyer21@mlb.com,Information Science,JAVA
+Barbe,Christoffersen,bchristoffersen22@plala.or.jp,Math,JAVA
+Alysia,Croci,acroci23@chron.com,Math,PYTHON
+Hillier,Chenery,hchenery24@cocolog-nifty.com,Math,C
+Frederik,Goodman,fgoodman25@gov.uk,Math,PYTHON
+Emmott,Canas,ecanas26@google.com.br,Math,PYTHON
+Arnoldo,Koenen,akoenen27@ca.gov,Information Science,JAVA
+Guillema,Kondratenko,gkondratenko28@amazon.co.uk,Math,C++
+Berty,Bruntjen,bbruntjen29@stanford.edu,Computer Science,Android
+Ivett,Jentzsch,ijentzsch2a@cdbaby.com,Information Science,C++
+Alyce,Grieveson,agrieveson2b@uiuc.edu,Biology,PYTHON
+Saidee,Chezier,schezier2c@mysql.com,Information Science,JAVA
+Hyacinthia,Pavlata,hpavlata2d@people.com.cn,Information Science,PYTHON
+Abbe,Rue,arue2e@discuz.net,Biology,PYTHON
+Auberon,Bownde,abownde2f@reference.com,Information Science,PYTHON
+Osborn,Foulis,ofoulis2g@360.cn,Computer Science,JAVA
+Jakie,Sallowaye,jsallowaye2h@boston.com,Math,PYTHON
+Adler,Hullah,ahullah2i@pinterest.com,Biology,C
+Mason,Kristiansen,mkristiansen2j@cisco.com,Math,Android
+Eyde,Risborough,erisborough2k@mashable.com,Biology,C
+Corenda,Tombleson,ctombleson2l@omniture.com,Information Science,PYTHON
+Charo,Espinay,cespinay2m@aol.com,Math,JAVA
+Davide,Roscrigg,droscrigg2n@phoca.cz,Information Science,JAVA
+Shani,Prandi,sprandi2o@dropbox.com,Biology,C
+Johan,Oakman,joakman2p@google.com.br,Computer Science,PYTHON
+Fields,Youhill,fyouhill2q@xinhuanet.com,Math,C
+Adore,Drinan,adrinan2r@sogou.com,Math,JAVA
