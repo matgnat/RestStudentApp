@@ -1,16 +1,22 @@
 package com.studentapp.features.studentapptest;
 
 import com.studentapp.testbase.TestBase;
+import net.serenitybdd.junit.runners.SerenityRunner;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Title;
+import net.thucydides.core.annotations.WithTag;
+import net.thucydides.core.annotations.WithTags;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 /**
  * Created by magn on 11/14/2017.
  */
-public class TagTest extends TestBase{
+@RunWith(SerenityRunner.class)
+public class TagsTestMy extends TestBase {
 
 
+    @WithTag("Studentfeature:NEGATIVE")
     @Title("Provide a 405 status code when incorrect HTTP method is used to access resources")
     @Test
     public void inValidMethod() {
@@ -25,6 +31,8 @@ public class TagTest extends TestBase{
                 .all();
     }
 
+
+    @WithTag("Studentfeature:POSITIVE")
     @Title("Verify if GET method will return status code 200")
     @Test
     public void verifyIfTheStatusCodeIs200() {
@@ -36,6 +44,9 @@ public class TagTest extends TestBase{
                 .statusCode(200);
     }
 
+
+
+    @WithTag("Studentfeature:NEGATIVE")
     @Title("Test will provide incorrect status code 400 becouse of fake resource")
     @Test
     public void incorrectResource() {
