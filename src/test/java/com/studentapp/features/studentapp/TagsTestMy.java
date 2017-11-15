@@ -1,4 +1,4 @@
-package com.studentapp.features.studentapptest;
+package com.studentapp.features.studentapp;
 
 import com.studentapp.testbase.TestBase;
 import net.serenitybdd.junit.runners.SerenityRunner;

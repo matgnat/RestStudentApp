@@ -1,4 +1,4 @@
-package com.studentapp.features.studentapptest;
+package com.studentapp.features.studentapp;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
