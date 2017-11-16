@@ -20,7 +20,7 @@ import java.util.HashMap;
 /**
  * Created by magn on 11/6/2017.
  */
-@RunWith(SerenityRunner.class)
+//@RunWith(SerenityRunner.class)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class StudentCRUDTest extends TestBase{
 

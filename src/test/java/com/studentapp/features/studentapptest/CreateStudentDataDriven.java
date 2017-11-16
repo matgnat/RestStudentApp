@@ -18,8 +18,8 @@ import java.util.List;
  * Created by magn on 11/9/2017.
  */
 @Concurrent(threads = "4x")
-@UseTestDataFrom("C:\\Users\\magn.MOBICAPL\\IdeaProjects\\StudentApp\\src\\test\\resorces\\studentData.csv")
-@RunWith(SerenityParameterizedRunner.class)
+@UseTestDataFrom("C:\\Users\\magn.MOBICAPL\\IdeaProjects\\StudentApp\\src\\test\\resorces\\dataFile\\studentData.csv")
+//@RunWith(SerenityParameterizedRunner.class)
 public class CreateStudentDataDriven extends TestBase{
 
     public String firstName;
@@ -45,7 +45,7 @@ public class CreateStudentDataDriven extends TestBase{
 
 
     studentSteps.createStudent(firstName, lastName, email, programme, courses)
-                .statusCode(201);
+                .statusCode(201).log().all();
 
     }
 }

@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
 /**
  * Created by magn on 11/14/2017.
  */
-@RunWith(SerenityRunner.class)
+//@RunWith(SerenityRunner.class)
 public class TagsTestMy extends TestBase {
 
 

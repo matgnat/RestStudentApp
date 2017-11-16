@@ -12,7 +12,7 @@ import net.thucydides.core.annotations.WithTag;
 import net.thucydides.core.annotations.WithTags;
 
 
-@RunWith(SerenityRunner.class)
+//@RunWith(SerenityRunner.class)
 public class TagsTestTutorial extends TestBase {
 
     @WithTag("Studentfeature:NEGATIVE")
