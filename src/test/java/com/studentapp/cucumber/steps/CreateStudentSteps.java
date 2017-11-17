@@ -9,6 +9,7 @@ import net.thucydides.core.annotations.Step;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * Created by magn on 11/8/2017.
@@ -17,7 +18,7 @@ public class CreateStudentSteps
 {
 
     @Step("Create student with firstName: {0}, lastName: {1}, email: {2}, programme: {3}, courses: {4}")
-    public ValidatableResponse createStudent(String firstName, String lastName, String email, String programme, ArrayList<String> course) {
+    public ValidatableResponse createStudent(String firstName, String lastName, String email, String programme, List<String> course) {
 
         StudentClass studentClass = new StudentClass();
         studentClass.setFirstName(firstName);
@@ -54,7 +55,7 @@ public class CreateStudentSteps
     }
 
     @Step("Update the existing student with id: {0} and firstName: {1}")
-    public ValidatableResponse updateStudent(int studenId, String firstName, String lastName, String email, String programme, ArrayList<String> courses) {
+    public ValidatableResponse updateStudent(int studenId, String firstName, String lastName, String email, String programme, List<String> courses) {
 
 
         StudentClass student = new StudentClass();
